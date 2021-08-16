@@ -17,6 +17,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
+Route::get('/produto', function () {
+    return view('home');
+})->name('produto');
+
+Route::get('/contato', function () {
+    return view('contato');
+})->name('contato');
+
+
+Route::get('/representante', function () {
+    return view('representante');
+})->name('representante');
+
+Route::get('/teste', function () {
+    return view('layouts.site');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
