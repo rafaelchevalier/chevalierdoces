@@ -1,0 +1,296 @@
+<head>
+	<title>Genial Delicatessen - Salgado de qualidade.</title>
+	<!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salgados">
+    <meta name="author" content="Genial">
+	
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="img/icone.ico">
+	
+	<!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+	
+	<!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+	
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css"><!-- Icones -->
+    <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+	<link rel="stylesheet" href="assets/plugins/hover-effects/css/custom-hover-effects.css">
+	<link rel="stylesheet" href="assets/plugins/ladda-buttons/css/custom-lada-btn.css">
+	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+	
+	<script>
+		function formatar(mascara, documento){
+		  var i = documento.value.length;
+		  var saida = mascara.substring(0,1);
+		  var texto = mascara.substring(i)
+		  
+		  if (texto.substring(0,1) != saida){
+					documento.value += texto.substring(0,1);
+		  }
+		  
+		}
+	</script>
+	
+</head>
+<body>
+	<!-- Página Inicial -->
+	<div class="bg_home">
+		<div class="container heading heading-v6">
+			<img  class="logo_home" src="assets/img/logo.png" alt="logo" width="260" />
+			<ul class="nav navbar-nav menu_bg menu_texto">
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<!-- <li> &nbsp;<a href="#">SOBRE</a>&nbsp;</li> -->
+				<li> &nbsp;<a href="\#produto">PRODUTO</a>&nbsp;</li>
+				<li> &nbsp;<a href="\#contato">CONTATO</a>&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li> &nbsp;<a href="/representante.html">REPRESENTANTES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a href="https://www.facebook.com/genialdelicatessen"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a></li>
+				<li><a href="#"><img src="assets/img/instagram.png" width="45px" alt="Instagram"></a></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			</ul>					
+		</div>
+		<div class="container">
+			<!--
+			<h1 class="texto-branco negrito">
+				Estamos com um grande número de interessados, por este motivo estamos tendo dificuldade em responder todos os contatos em tempo hábil. Agradecemos a compreensão de todos.<br />
+				VOCÊ É MUITO IMPORTANTE PARA NÓS!  
+			</h1>
+			-->
+			<h2 class="texto-branco negrito">
+				Seja um de nossos representantes ou revendedores.
+			</h2>
+			<!-- 
+			<h3 class="texto-branco">
+				No momento estamos aceitando apenas representantes para a cidade do Rio de Janeiro e arredores. Caso tenha interesse preeencha o formulário abaixo que nós 
+				entramos em contato.
+			</h3> 
+			-->
+		</div>
+		<div class="container">
+			<form action="assets\php\email\email.php?tipo=representacao" method="post" id="sky-form" id="form" class="sky-form">
+				<div class="row">
+					<section class="col col-3">
+						<label class="input">
+							<i class="icon-prepend fa fa-user"></i>
+							<input type="text" name="nome" placeholder="Nome Completo" maxlength="255" autofocus required>
+						</label>
+					</section>
+					<section class="col col-3">
+						<label class="input">
+							<i class="icon-prepend fa fa-envelope"></i>
+							<input type="text" name="cpf" Placeholder="CPF" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" required>
+							<!-- <input type="text" name="cnpj" Placeholder="CNPJ" maxlength="14" OnKeyPress="formatar('##.###.###/####-##', this)" > -->
+						</label>
+					</section>
+					<section class="col col-3">
+						<label class="input">
+							<i class="icon-prepend fa fa-envelope"></i>
+							<input type="text" name="email"  maxlength="70" placeholder="E-mail" required>
+						</label>
+					</section>
+					<section class="col col-3">
+						<label class="input">
+							<i class="icon-prepend fa fa-phone"></i>
+							<input type="text" name="telefone" placeholder="Telefone Com DDD" maxlength="13" OnKeyPress="formatar('##-####-#####', this)" required>
+						</label>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col col-2">
+						<label class="input">
+							<i class="icon-prepend fa fa-map-marker"></i>
+							<input type="text" name="cep" id="cep" placeholder="CEP" maxlength="10" required >
+						</label>
+					</section>
+					<section class="col col-3">
+						<label class="input">
+							<i class="icon-prepend fa fa-map-marker"></i>
+							<input type="text" name="endereco" id="endereco" placeholder="ENDEREÇO">
+						</label>
+					</section>
+					<section class="col col-2">
+						<label class="input">
+							<i class="icon-prepend fa fa-map-marker"></i>
+							<input type="text" name="numero" id="numero" placeholder="NUMERO">
+						</label>
+					</section>					
+					<section class="col col-5">
+						<label class="input">
+							<i class="icon-prepend fa fa-map-marker"></i>
+							<input type="text" name="complemento" id="complemento" placeholder="COMPLEMENTO">
+						</label>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col col-2">
+						<label class="input">
+							<i class="icon-prepend fa fa-map-marker"></i>
+							<input type="text" name="bairro" id="bairro" placeholder="BAIRRO">
+						</label>
+					</section>
+					<section class="col col-2">
+						<label class="input">
+							<i class="icon-prepend fa fa-map-marker"></i>
+							<input type="text" name="uf" id="uf" placeholder="UF">
+						</label>
+					</section>
+					<section class="col col-3">
+						<label class="input">
+							<i class="icon-prepend fa fa-map-marker"></i>
+							<input type="text" name="cidade" id="cidade" placeholder="CIDADE">
+						</label>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col col-11">
+						<label class="input">
+							<h4 class="texto-branco negrito">Mensagem</h4>
+							<textarea name="message" class="form-control" rows="3"></textarea>
+						</label>
+					</section>
+					
+				</div>
+				<div class="row">
+					<button type="submit" id="envia" class="btn-u">Enviar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Sobre a Empresa 
+	<div class="wrapper bg_claro">
+		<div class="container bg_claro">
+			<div class="row padding-top">
+				<div class="col col-md-8">
+					<p class="heading heading-v1"><h2></p></h2>
+					<p class="texto-branco"><h2>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</h2></p>
+				</div>
+				<div class="col col-md-4">
+					<img src="assets/img/Talheres.png" width="80%" alt="Talheres" />
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+
+	<!-- Rodapé -->
+	<div class="wrapper">
+		<div class="wrapper ">
+			<div class="row heading heading-v6">
+				<p></p>
+				<p>
+					<a href="https://www.facebook.com/genialdelicatessen"><img src="assets/img/facebook.png" width="50px" alt="Facebook"></a>
+					<a href="#"><img src="assets/img/instagram.png" width="50px" alt="Instagram"></a>
+				</p>
+				<p>
+					Rua Severianno Monteiro, 271 Casa 2, Bairro Bras de Pina - Rio de Janeiro RJ - Cep: 21.235-620 <br />
+					Telefone: (21)4107-6244 - Email: <a href="mailto:contato@genialdelicatessen" >contato@genialdelicatessen.com.br
+				</p>
+				
+			</div><!--/row heading heading-v6-->
+		</div><!--/wrapper-->
+	</div><!--/wrapper-->
+
+
+	<!-- JS Global Compulsory -->
+    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+    <script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
+    <script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+    <script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/cube-portfolio/cube-portfolio-2-ns.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            App.init();
+            OwlCarousel.initOwlCarousel();
+            ParallaxSlider.initParallaxSlider();
+        });
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {	
+			$('#envia').on( 'click', function () {
+				$("#form :input").prop("disabled", true); // DESABILITA TODOS OS CAMPOS
+			});
+			$('#cep').on( 'focus', function () {
+				$('#complemento').val("");
+				$('#numero').val("");
+				$('#endereco').val("");
+				$('#bairro').val("");
+				$('#cidade').val("");
+				$('#uf').val("");		
+				$('#cep').val("");
+			});
+			$('#cep').on( 'focusout', function () {
+				$json_cep = "";
+				
+				$cep = $('#cep').val();
+								
+				$.getJSON( "https://viacep.com.br/ws/"+$cep+"/json/", function( data ) {					
+					if(data["erro"] != true){
+						$json_cep = data;//Grava Json com todos o produtos na variavel $json_produtos
+						$('#complemento').val("");
+						$('#numero').val("");
+						$('#endereco').val($json_cep['logradouro']);
+						$('#bairro').val($json_cep['bairro']);
+						$('#cidade').val($json_cep['localidade']);
+						$('#uf').val($json_cep['uf']);	
+						$('#numero').focus();
+					}
+					if(data["erro"] == true){
+						$('#complemento').val("");
+						$('#numero').val("");
+						$('#endereco').val("");
+						$('#bairro').val("");
+						$('#cidade').val("");
+						$('#uf').val("");		
+						$('#cep').val("");
+						
+						$('#cep').focus();
+						
+						alert('Cep Inválido');
+					}
+				});			
+			});
+		});
+	</script>
+</body>
