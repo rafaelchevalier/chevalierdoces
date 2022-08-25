@@ -59,10 +59,7 @@ p .texto_medio{
 	background-size: 100%;
 }
 .logo_menu{
-	float:left;
-	margin-left:25%;
-	margin-right:1%;
-	margin-top:10%;
+		
 	
 }
 .logo_menu2{
@@ -77,7 +74,6 @@ p .texto_medio{
 .logo_home{
 	margin-left: 28%;
 	margin-top: 20px;
-	background:url(../../assets/img/logo.png) repeat;
 	float:left;
 	position: relative;
 	
