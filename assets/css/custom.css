@@ -1,6 +1,4 @@
 /* Add here all your css styles (customizations) */
-
-
 .bg_claro{
 	background: #FFE3A6;
     color: #ffffff;
@@ -25,9 +23,6 @@ p .texto_medio{
 	 border: solid; /*Borda das fotos*/
 	border-color: #9ACD32;
 }
-/*li .active{
-	background-color: #32CD32;
-}*/
 .texto_serviços{
 	font-family: verdanna;
 	color: #619640;
@@ -40,57 +35,53 @@ p .texto_medio{
 	border-color: #9ACD32;
 }
 .fundo-escuro-texo-banner{
-	background:url(../plugins/parallax-slider/img/bg-text.png) repeat;
+	background:url(../plugins/parallax-slider/img/bg-text.png) no-repeat;
 	font-style:normal;
-	padding:40px;
-	/*padding-top:40px;*/
 }
-/* Imagnes de Funco*/
+/* Imagnes de Fundo*/
 .bg_contato{
-	background:url(../../assets/img/bg_contato.png) repeat;
-	width:100%;
+	background:url(../../assets/img/bg_contato.png) no-repeat;
 	height:800px;
 	background-size: 100%;
 }
 .bg_home{
 	background:url(../../assets/img/bg_home.jpg) repeat;
-	width:100%;
 	height:800px;
 	background-size: 100%;
 }
-.logo_menu{
-	float:left;
-	margin-left:25%;
-	margin-right:1%;
-	margin-top:10%;
-	
-}
-.logo_menu2{
-	float:left;
-	margin-top:10%;
-	
-}
-.div_texto{
-	float:left;
-	margin-top:10%;
-}
 .logo_home{
-	margin-left: 28%;
-	margin-top: 20px;
-	background:url(../../assets/img/logo.png) repeat;
+	margin-left: 30%;
+	border-top: 5%;
+	padding-top: 1%;
 	float:left;
 	position: relative;
-	
 }
 .menu_bg{
-	margin-top:-100px;
-	margin-left: 5%;
+	float: left;
+	top: auto;
+	padding-left: 5%;
+	margin-top: -7%;
+	width: 100%;
+	text-align: left;
 	background-color:#FFE3A6;
 	border-radius: 40px;
-	
 }
 .menu_texto{
-	padding-top: -10px;
-	padding-bottom: -10px;
-	font-style:bold;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: large;
+	font-weight: bold;
+}
+.menu_esquerda{
+ padding-left: 10;
+ padding-top: 15;
+ left: 0;
+}
+.menu_direita_inicio{
+ padding-left: 30%;
+ padding-top: 15;
+}
+.container_menu{
+	width: 80%;
+	text-align: center;
 }
