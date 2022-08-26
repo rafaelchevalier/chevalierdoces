@@ -38,7 +38,7 @@ p .texto_medio{
 	background:url(../plugins/parallax-slider/img/bg-text.png) no-repeat;
 	font-style:normal;
 }
-/* Imagnes de Fundo*/
+/* Imagnes de Funo*/
 .bg_contato{
 	background:url(../../assets/img/bg_contato.png) no-repeat;
 	height:800px;
@@ -60,7 +60,7 @@ p .texto_medio{
 	float: left;
 	top: auto;
 	padding-left: 5%;
-	margin-top: -7%;
+	margin-top: -5%;
 	width: 100%;
 	text-align: left;
 	background-color:#FFE3A6;
