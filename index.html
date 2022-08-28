@@ -23,6 +23,12 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
+	<!-- CSS para menu responsivo com media -->
+	<link 
+		rel="stylesheet" 
+		href="assets/css/custom_mobile.css"
+		media="screen and (max-width: 880px")
+	/>
 	
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/animate.css">
@@ -40,9 +46,28 @@
 <body>
 	<!-- Página Inicial -->
 	<div class="bg_home">
-			<div class="container container_menu heading heading-v6">
+			<!-- Inicio Menu Mobile -->
+		<nav class="nav_menu_mobile">
+			<img src="assets/img/logo.png" alt="logo" width="100px" />
+			<div id="itens_menu_mobile" >
+				<a href="#produto">PRODUTO</a>
+				<a href="#contato">CONTATO</a>
+				<a href="/representante.html">REPRESENTANTES</a>
+				<a href="https://www.facebook.com/chevalierdoces/"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a>
+				<a href="https://www.facebook.com/chevalierdoces/"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a>
+			</div>
+			<a href="javascript:void(0);" class="icon_menu_mobile " onclick="menuMobile()">
+				<div class="icone_menu_div"></div>
+				<div class="icone_menu_div"></div>
+				<div class="icone_menu_div"></div>
+			</a>
+		</nav>
+			<!-- Fim Menu Mobile -->
+			<!-- Inicio Menu Principal -->
+		<nav class="nav_menu_principal">
+			<div class="container container_menu">
 				<img  class="logo_home" src="assets/img/logo.png" alt="logo" width="28%" />
-				<ul class="nav navbar-nav menu_bg menu_texto">				
+				<ul class="menu_bg menu_texto">				
 					<li class="menu_esquerda"><a href="#produto">PRODUTO</a></li>
 					<li class="menu_esquerda"><a href="#contato">CONTATO</a></li>
 					<li class="menu_direita_inicio"><a href="/representante.html">REPRESENTANTES</a></li>
@@ -50,16 +75,19 @@
 					<li class="menu_icone "><a href="https://www.instagram.com/chevalierdoces/"><img src="assets/img/instagram.png" width="45px" alt="Instagram"></a></li>
 				</ul>					
 			</div>
+		</nav>
+		<!-- Fi Menu Principal -->
 	</div>	
 	<!-- Produtos -->
-	<div id="produto" class="wrapper">
+	<div id="produto" class="wrapper bg_escuro Produtos">
 		<div class="wrapper bg_escuro">
 			<div class="container bg_escuro">
-				<div class="row padding-top">
+				<div class="row padding-top ">
 					<div class="col col-md-4">
 						<!-- <p class="heading heading-v1"><h2>Chevalier Doces</p></h2>-->
 						<p><h2><img class="rounded-x borda-verde-clara"  src="assets/img/brownies2.jpg" width="250px" height="250px" alt="Brownies"></h2></p>
 					</div><!-- col col-md-8 -->
+					
 					<div class="col col-md-4">
 						<ul >
 							<h3 class="texto-branco">SABORES</h3>
@@ -69,7 +97,9 @@
 							<li class="texto-branco">Beijinho</li>
 							<li class="texto-branco">Tradicional</li>
 						</ul>
+					</nav>
 					</div><!-- col col-md-4 -->
+					
 					<div class="col col-md-4">
 						<!-- <p class="heading heading-v1"><h2>Chevalier Doces</p></h2>-->
 						<img src="assets/img/Talheres.png" width="40%" alt="Talheres" />
@@ -193,6 +223,18 @@
 			PortfolioPage.init();
         });
 	</script>
+	<!-- Script display menu mobile-->
+	<script>
+		function menuMobile() {
+		  var x = document.getElementById("itens_menu_mobile");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+			x.style,TransitionEvent = "100ms";
+		  }
+		}
+		</script>
 	<!-- Inicio Script Bitrix24 -->
 	<script>
 		(function(w,d,u){

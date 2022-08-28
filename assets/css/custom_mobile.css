@@ -1,0 +1,63 @@
+/* Inicio Menu */	
+	/*ícone Menu*/
+	.icone_menu_div {
+		width: 35px;
+		height: 5px;
+		background-color: #FFE3A6;
+		margin: 6px 0;
+	  }
+	.bg_home{
+		height: auto;
+		display: block;
+	}
+	.nav_menu_principal {
+		display: none;
+	}
+	.nav_menu_mobile{
+		text-align: center;
+		display: block;
+		margin: auto;
+		width: 100%;
+		font-size: large;
+		font-weight: bold;
+		top: 0;
+	}
+	.nav_menu_mobile img{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.nav_menu_mobile a {
+		background-color: #FFE3A6;
+		color: gray;
+		display: block;
+		padding: 10 10 10 10;
+		text-transform: uppercase;
+	}
+	.nav_menu_mobile a:hover {
+		background-color: gray;
+		color: #FFE3A6;
+	}
+	.nav_menu_mobile a.icon_menu_mobile {
+		background-color: black;
+		
+		color: #FFE3A6;
+		position: absolute;
+		display: block;
+		right: 0;
+		top: 0;
+
+		
+	}
+	#itens_menu_mobile{
+		display: none;
+		
+	}
+	.menu_toggle{
+
+	}
+/* Fim Menu */
+/************************************************************************************************************************************/
+/* inicio sabores*/
+
+/* Fim sabores*/
+/************************************************************************************************************************************/
