@@ -7,6 +7,14 @@
 	background: #574635;
     color: #ffffff;
 }
+.bg_escuro h1, h2, h3, h4{
+	color: #ffffff;
+	text-align: center;
+	padding-top: 5;
+	padding-bottom: 5;
+	text-decoration-line:underline;
+	text-transform: uppercase;
+}
 .texto-branco{
     color: #ffffff;
 }

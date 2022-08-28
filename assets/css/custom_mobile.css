@@ -39,25 +39,20 @@
 	}
 	.nav_menu_mobile a.icon_menu_mobile {
 		background-color: black;
-		
 		color: #FFE3A6;
 		position: absolute;
 		display: block;
 		right: 0;
 		top: 0;
-
-		
 	}
 	#itens_menu_mobile{
 		display: none;
 		
 	}
-	.menu_toggle{
-
-	}
 /* Fim Menu */
 /************************************************************************************************************************************/
 /* inicio sabores*/
+
 
 /* Fim sabores*/
 /************************************************************************************************************************************/

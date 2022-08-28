@@ -22,6 +22,13 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
+
+	<!-- CSS para menu responsivo com media -->
+	<link 
+		rel="stylesheet" 
+		href="assets/css/custom_mobile.css"
+		media="screen and (max-width: 880px")
+	/>
 	
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/animate.css">
@@ -50,35 +57,37 @@
 <body>
 	<!-- Página Inicial -->
 	<div class="bg_home">
-		<div class="container heading heading-v6">
-			<img  class="logo_home" src="assets/img/logo.png" alt="logo" width="260" />
-			<ul class="nav navbar-nav menu_bg menu_texto">
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<!-- <li> &nbsp;<a href="#">SOBRE</a>&nbsp;</li> -->
-				<li> &nbsp;<a href="\#produto">PRODUTO</a>&nbsp;</li>
-				<li> &nbsp;<a href="\#contato">CONTATO</a>&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li> &nbsp;<a href="/representante.html">REPRESENTANTES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li><a href="https://www.facebook.com/genialdelicatessen"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a></li>
-				<li><a href="#"><img src="assets/img/instagram.png" width="45px" alt="Instagram"></a></li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-			</ul>					
-		</div>
+		<!-- Inicio Menu Mobile -->
+		<nav class="nav_menu_mobile">
+			<img src="assets/img/logo.png" alt="logo" width="100px" />
+			<div id="itens_menu_mobile" >
+				<a href="index.html#produto">PRODUTO</a>
+				<a href="index.html#contato">CONTATO</a>
+				<a href="/representante.html">REPRESENTANTES</a>
+				<a href="https://www.facebook.com/chevalierdoces/" class="icone_social_menu"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a>
+				<a href="https://www.instagram.com/chevalierdoces/" class="icone_social_menu"><img src="assets/img/instagram.png" width="45px" alt="Instagram"></a>
+			</div>
+			<a href="javascript:void(0);" class="icon_menu_mobile " onclick="menuMobile()">
+				<div class="icone_menu_div"></div>
+				<div class="icone_menu_div"></div>
+				<div class="icone_menu_div"></div>
+			</a>
+		</nav>
+			<!-- Fim Menu Mobile -->
+			<!-- Inicio Menu Principal -->
+		<nav class="nav_menu_principal">
+			<div class="container container_menu">
+				<img  class="logo_home" src="assets/img/logo.png" alt="logo" width="28%" />
+				<ul class="menu_bg menu_texto">				
+					<li class="menu_esquerda"><a href="index.html#produto">PRODUTO</a></li>
+					<li class="menu_esquerda"><a href="index.html#contato">CONTATO</a></li>
+					<li class="menu_direita_inicio"><a href="/representante.html">REPRESENTANTES</a></li>
+					<li class="menu_icone"><a href="https://www.facebook.com/chevalierdoces/"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a></li>
+					<li class="menu_icone "><a href="https://www.instagram.com/chevalierdoces/"><img src="assets/img/instagram.png" width="45px" alt="Instagram"></a></li>
+				</ul>					
+			</div>
+		</nav>
+		<!-- Fim Menu Principal -->
 		<div class="container">
 			<!--
 			<h1 class="texto-branco negrito">
@@ -209,7 +218,7 @@
 				<p></p>
 				<p>
 					<a href="https://www.facebook.com/genialdelicatessen"><img src="assets/img/facebook.png" width="50px" alt="Facebook"></a>
-					<a href="#"><img src="assets/img/instagram.png" width="50px" alt="Instagram"></a>
+					<a href="https://www.instagram.com/chevalierdoces/"><img src="assets/img/instagram.png" width="50px" alt="Instagram"></a>
 				</p>
 				<p>
 					Rua Severianno Monteiro, 271 Casa 2, Bairro Bras de Pina - Rio de Janeiro RJ - Cep: 21.235-620 <br />

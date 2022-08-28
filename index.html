@@ -3,7 +3,7 @@
 	<!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brownies">
+    <meta name="description" content="Empresa familiar de fabriação e comercialização de brownies.">
     <meta name="author" content="Chevalier Doces">
 	<meta name="keywords" content="brownies, Chevalier Brownies, Doces, Doceria, Delicias, Delicatessen, Brownie, Brownie Vista Alegre">
 	
@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/icone.ico">
 	
 	<!-- Web Fonts -->
-    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600subset=cyrillic,latin'>
 	
 	<!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -23,6 +23,7 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
+	<link rel="stylesheet" href="assets/css/produtos.css">
 	<!-- CSS para menu responsivo com media -->
 	<link 
 		rel="stylesheet" 
@@ -46,15 +47,15 @@
 <body>
 	<!-- Página Inicial -->
 	<div class="bg_home">
-			<!-- Inicio Menu Mobile -->
+		<!-- Inicio Menu Mobile -->
 		<nav class="nav_menu_mobile">
 			<img src="assets/img/logo.png" alt="logo" width="100px" />
 			<div id="itens_menu_mobile" >
 				<a href="#produto">PRODUTO</a>
 				<a href="#contato">CONTATO</a>
 				<a href="/representante.html">REPRESENTANTES</a>
-				<a href="https://www.facebook.com/chevalierdoces/"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a>
-				<a href="https://www.facebook.com/chevalierdoces/"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a>
+				<a href="https://www.facebook.com/chevalierdoces/" class="icone_social_menu"><img src="assets/img/facebook.png" width="45px" alt="Facebook"></a>
+				<a href="https://www.instagram.com/chevalierdoces/" class="icone_social_menu"><img src="assets/img/instagram.png" width="45px" alt="Instagram"></a>
 			</div>
 			<a href="javascript:void(0);" class="icon_menu_mobile " onclick="menuMobile()">
 				<div class="icone_menu_div"></div>
@@ -76,38 +77,46 @@
 				</ul>					
 			</div>
 		</nav>
-		<!-- Fi Menu Principal -->
+		<!-- Fim Menu Principal -->
 	</div>	
 	<!-- Produtos -->
-	<div id="produto" class="wrapper bg_escuro Produtos">
-		<div class="wrapper bg_escuro">
-			<div class="container bg_escuro">
-				<div class="row padding-top ">
-					<div class="col col-md-4">
-						<!-- <p class="heading heading-v1"><h2>Chevalier Doces</p></h2>-->
-						<p><h2><img class="rounded-x borda-verde-clara"  src="assets/img/brownies2.jpg" width="250px" height="250px" alt="Brownies"></h2></p>
-					</div><!-- col col-md-8 -->
-					
-					<div class="col col-md-4">
-						<ul >
-							<h3 class="texto-branco">SABORES</h3>
-							<li class="texto-branco">Chocolate C/Avelã</li>
-							<li class="texto-branco">Brigadeiro</li>
-							<li class="texto-branco">Doce de Leite</li>
-							<li class="texto-branco">Beijinho</li>
-							<li class="texto-branco">Tradicional</li>
-						</ul>
-					</nav>
-					</div><!-- col col-md-4 -->
-					
-					<div class="col col-md-4">
-						<!-- <p class="heading heading-v1"><h2>Chevalier Doces</p></h2>-->
-						<img src="assets/img/Talheres.png" width="40%" alt="Talheres" />
-					</div><!-- col col-md48 -->
-				</div><!-- /row padding-top -->
-			</div><!--/container-->
-		</div><!--/wrapper-->
-	</div><!--/wrapper-->
+	<section class="bg_escuro">
+		<div class="bg_escuro container">
+			<h2 id="produto">Sabores</h2>
+			<div class="row">
+				<div class="col-md-3 div_produtos">
+					<h4>Chocolate C/ Avelã</h4>
+					<img class="foto_produtos" src="assets/img/produtos/avela.jpg"/>
+				</div>
+				<div class="col-md-3 div_produtos">
+					<h4>Brigadeiro</h4>
+					<img class="foto_produtos" src="assets/img/produtos/brigadeiro.jpg"/>
+				</div>
+				<div class="col-md-3 div_produtos">
+					<h4>Doce de Leite</h4>
+					<img class="foto_produtos" src="assets/img/produtos/docedeleite.jpg"/>
+				</div>
+				<div class="col-md-3 div_produtos">
+					<h4>Beijinho</h4>
+					<img class="foto_produtos" src="assets/img/produtos/beijinho.jpg"/>
+				</div>
+				<div class="col-md-3 div_produtos">
+					<h4>maracuja</h4>
+					<img class="foto_produtos" src="assets/img/produtos/maracuja.jpg"/>
+				</div>
+				<div class="col-md-3 div_produtos">
+					<h4>personalizados</h4>
+					<img class="foto_produtos" src="assets/img/produtos/personalizados.jpg"/>
+				</div>
+				<div class="col-md-6 div_produtos">
+					<h4>Cafe da Manha</h4>
+					<video controls preload="auto" autoplay muted loop class="video_produtos">
+						<source src="assets/img/produtos/cafedamanha.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Fim Produtos -->
 	
 	<!-- Contato -->
@@ -184,7 +193,7 @@
 				<p></p>
 				<p>
 					<a href="https://www.facebook.com/chevalierdoces"><img src="assets/img/facebook.png" width="50px" alt="Facebook"></a>
-					<a href="#"><img src="assets/img/instagram.png" width="50px" alt="Instagram"></a>
+					<a href="https://www.instagram.com/chevalierdoces/"><img src="assets/img/instagram.png" width="50px" alt="Instagram"></a>
 				</p>
 				<p>
 					Rua Severianno Monteiro, 271 Casa 2, Bairro Bras de Pina - Rio de Janeiro RJ - Cep: 21.235-620 <br />
